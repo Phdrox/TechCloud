@@ -1,0 +1,6 @@
+#home{
+    background-image: url('../image/Wallpaper.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
