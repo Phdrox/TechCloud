@@ -17,10 +17,8 @@ export const MenuCol=()=>{
     const state=useSelector((state:RootState)=>state.techcloud.stateMenu);
     const dispatch=useDispatch();
     
-    const closeMenu=(e:React.MouseEvent<HTMLElement>)=>{
-        
+    const closeMenu=()=>{
         dispatch(setState(false));
-        
     }
     
     if(!state){return null};
