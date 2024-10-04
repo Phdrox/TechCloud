@@ -4,7 +4,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import { setState } from "../redux/reducer";
 
 export const MenuRow=()=>(
-    <ul className="flex text-white gap-4 mobile:hidden tablet:hidden notebook:flex">
+    <ul className="flex text-white gap-4 mobile:hidden tablet:hidden notebook:flex ">
         <li><a href="#Home">Home</a></li>
         <li><a href="#Projetos">Projetos</a></li>
         <li><a href="#Tecnologias">Tecnologias</a></li>
@@ -23,7 +23,7 @@ export const MenuCol=()=>{
     
     if(!state){return null};
     return(
-    <ul className="flex flex-col text-white gap-4 notebook:hidden absolute items-center bg-sky-950 w-full max-h-max top-0 p-3" data-aos='fade-down'>
+    <ul className="flex flex-col text-white gap-4 notebook:hidden absolute items-center bg-sky-950 w-full  top-0 p-3" data-aos='fade-down'>
         <span className="w-full flex justify-end"><button onClick={closeMenu}><CloseIcon fontSize="large" className="hover:tex-red-500 active:text-red-500 cursor-pointer"/></button></span>
         <li><a href="#Home" onClick={closeMenu}>Home</a></li>
         <li><a href="#Projetos" onClick={closeMenu}>Projetos</a></li>
